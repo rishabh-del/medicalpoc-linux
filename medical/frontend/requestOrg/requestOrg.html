@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box
+  }
+</style>
+
+<body>
+  <form style="border:1px solid #ccc; width: 550px; margin-left: auto; margin-right: auto; position: fixed; top: 90px;">
+    <div class="container">
+      <h1>Add Organization Request</h1>
+      <p>Please fill in this form to add new Organization.</p>
+      <hr>
+
+      <label for="orgName"><b>Organization Name</b></label></br>
+      <input type="orgName" placeholder="Enter Organization Name" style="width: -webkit-fill-available" ng-model="user.orgName" name="orgName" required></br></br>
+
+      <label for="chaincodeVersion"><b>Chaincode Version</b></label></br>
+      <input type="chaincodeVersion" placeholder="Enter chaincode Version" style="width: -webkit-fill-available" ng-model="user.chaincodeVersion" name="chaincodeVersion" required></br></br>
+     
+
+      <label for="port1"><b>Port 1</b></label></br>
+      <input type="port1" placeholder="Enter Port Address" style="width: -webkit-fill-available" ng-model="user.port1" name="port1" required></br></br>
+     
+      <label for="port2"><b>Port 2</b></label></br>
+      <input type="port2" placeholder="Enter Port Address" style="width: -webkit-fill-available" ng-model="user.port2" name="port2" required></br></br>
+     
+      <label for="port3"><b>Port 3</b></label></br>
+      <input type="port3" placeholder="Enter Port Address" style="width: -webkit-fill-available" ng-model="user.port3" name="port3" required></br></br>
+
+      <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
+      <div class="clearfix">
+        <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+        <button type="submit" class="signupbtn" ng-click="addOrg(user)">Request to Admin</button>
+      </div>
+    </div>
+  </form>
+
+</body>
+
+</html>

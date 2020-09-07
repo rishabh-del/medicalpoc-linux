@@ -1,0 +1,1491 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><title>
+	Daily Medicine Purchase
+</title><link href="../css/bootstrap.css" rel="stylesheet"><link href="../css/style.css" rel="stylesheet" type="text/css">
+    <!--menu-->
+    <link href="../admin_css/menu.css" rel="stylesheet" type="text/css"><link href="../admin_css/style.css" rel="stylesheet" type="text/css"><link href="../css/footerstyle.css" rel="stylesheet" type="text/css"><link href="../css/theme.css" rel="stylesheet">
+<script type="text/javascript" src="../js/sweetalert.min.js"></script>
+    <link href="../css/sweetalert.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.main_menu ul li').hover(
+		function() {
+		    $('.sub_items', this).stop(true, false).slideDown();
+		}, function() {
+		    $('.sub_items', this).stop(true, false).slideUp();
+		});
+        });
+        function noBack() {
+            window.history.forward()
+        }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function(evt) { if (evt.persisted) noBack(); }
+        window.onunload = function() { void (0); }
+    </script>
+
+    
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+<link href="/WebResource.axd?d=OKaXe4XzuJA99-x6I5Dbe05RZEEif1uNYY13sMpwxBEnQ6zy09pE73yAo1v7b2urNNsaeu17IC7J7mhUb8mSLqABpgd4cJr34XINMrgSoXML6p0YOcCwcOBBCeoWJrT675OwF071jje-f9ZSFBI37W7Ouv41&amp;t=636717447600000000" type="text/css" rel="stylesheet"></head>
+<body>
+
+    <script type="text/javascript">
+        function add() {
+            document.getElementById("lnknotificationfor").click();
+        }
+    </script>
+
+    <form method="post" action="./Rpt_DailyMedicinePurchaseReport.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTMwODA2OTA2OA9kFgJmDw8WCB4FTG9nSUQFBTEzMzk0HghVc2VyQ29kZQUDMTc0HghCcmFuY2hJZAUBMR4MUkVDRVBUSU9OSVNUBQEwZBYCZg8PFggfAAUFMTMzOTQfAQUDMTc0HwIFATEfAwUBMGQWAgIBD2QWFAIFD2QWAgIBD2QWAgIBDw8WBh8CBQExHwMFATAfAQUDMTc0ZGQCCw9kFgICAQ9kFgICAQ8PFgYfAgUBMR8DBQEwHwEFAzE3NGQWBGYPZBYCAgEPFgIeB1Zpc2libGVoFgICAQ8PZBYCHgpvbmtleXByZXNzBSRidXR0b25fY2xpY2sodGhpcywnTG9naW4xX2J0bmxvZ2luJylkAgQPZBYEAgEPDxYCHghJbWFnZVVybAUkfi9Qcm9maWxlSW1hZ2UuYXNoeD92YWw9MTc0JkJyYW5jaD0xZGQCAw8WAh4JaW5uZXJodG1sBQ5XZWxjb21lICByb2hpdGQCDw8PFgofAgUBMR8DBQEwHwEFAzE3NB4GVXNlcmlkBQMyMDgeCElzVmlzYmxlBQEwZBYCAgIPZBYEAgkPPCsACQEADxYEHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudAIjZBZGZg9kFgICAQ8PFgQeB1Rvb2xUaXAFBEhJTVMeBFRleHQFBEhJTVNkZAIBD2QWAgIBDw8WBB8MBRBOVVJTRSBERVBBUlRNRU5UHw0FEE5VUlNFIERFUEFSVE1FTlRkZAICD2QWAgIBDw8WBB8MBQlBTUJVTEFOQ0UfDQUJQU1CVUxBTkNFZGQCAw9kFgICAQ8PFgQfDAUJUkFESU9MT0dZHw0FCVJBRElPTE9HWWRkAgQPZBYCAgEPDxYEHwwFCVBBVEhPTE9HWR8NBQlQQVRIT0xPR1lkZAIFD2QWAgIBDw8WCB8MBQhQSEFSTUFDWR8NBQhQSEFSTUFDWR4JQmFja0NvbG9yCQAAmv8eBF8hU0ICCBYCHgVTdHlsZQVdd2lkdGg6MTUwcHg7d2hpdGUtc3BhY2U6bm93cmFwO292ZXJmbG93OmhpZGRlbjt0ZXh0LW92ZXJmbG93OmVsbGlwc2lzO2NvbG9yOndoaXRlICFpbXBvcnRhbnQ7ZAIGD2QWAgIBDw8WBB8MBQRESUVUHw0FBERJRVRkZAIHD2QWAgIBDw8WBB8MBRRJTlZFTlRPUlkgTUFOQUdFTUVOVB8NBRRJTlZFTlRPUlkgTUFOQUdFTUVOVGRkAggPZBYCAgEPDxYEHwwFFEVRVUlQTUVOVCBNQU5BR0VNRU5UHw0FFEVRVUlQTUVOVCBNQU5BR0VNRU5UZGQCCQ9kFgICAQ8PFgQfDAUNSE9VU0UgS0VFUElORx8NBQ1IT1VTRSBLRUVQSU5HZGQCCg9kFgICAQ8PFgQfDAUHTEFVTkRSWR8NBQdMQVVORFJZZGQCCw9kFgICAQ8PFgQfDAUJTUFSS0VUSU5HHw0FCU1BUktFVElOR2RkAgwPZBYCAgEPDxYEHwwFB0tJVENIRU4fDQUHS0lUQ0hFTmRkAg0PZBYCAgEPDxYEHwwFB1BBWVJPTEwfDQUHUEFZUk9MTGRkAg4PZBYCAgEPDxYEHwwFBk1PUkdVRR8NBQZNT1JHVUVkZAIPD2QWAgIBDw8WBB8MBRNET0NVTUVOVCBNQU5BR0VNRU5UHw0FE0RPQ1VNRU5UIE1BTkFHRU1FTlRkZAIQD2QWAgIBDw8WBB8MBQdGSU5BTkNFHw0FB0ZJTkFOQ0VkZAIRD2QWAgIBDw8WBB8MBR9CVVNJTkVTUyBJTlRFTExJR0VOQ0UgREFTSEJPQVJEHw0FH0JVU0lORVNTIElOVEVMTElHRU5DRSBEQVNIQk9BUkRkZAISD2QWAgIBDw8WBB8MBQlVVElMSVRJRVMfDQUJVVRJTElUSUVTZGQCEw9kFgICAQ8PFgQfDAUFQUxFUlQfDQUFQUxFUlRkZAIUD2QWAgIBDw8WBB8MBQVBU1NFVB8NBQVBU1NFVGRkAhUPZBYCAgEPDxYEHwwFCERPTkFUSU9OHw0FCERPTkFUSU9OZGQCFg9kFgICAQ8PFgQfDAUGRU5FUkdZHw0FBkVORVJHWWRkAhcPZBYCAgEPDxYEHwwFBENTU0QfDQUEQ1NTRGRkAhgPZBYCAgEPDxYEHwwFIVBIWVNJT1RIRVJBUEhZIEFORCBSRUhBQklMSVRBVElPTh8NBSFQSFlTSU9USEVSQVBIWSBBTkQgUkVIQUJJTElUQVRJT05kZAIZD2QWAgIBDw8WBB8MBQpCTE9PRCBCQU5LHw0FCkJMT09EIEJBTktkZAIaD2QWAgIBDw8WBB8MBRFCSU8tTUVESUNBTCBXQVNURR8NBRFCSU8tTUVESUNBTCBXQVNURWRkAhsPZBYCAgEPDxYEHwwFCkNBUkRJT0xPR1kfDQUKQ0FSRElPTE9HWWRkAhwPZBYCAgEPDxYEHwwFCVBFRElBVFJJQx8NBQlQRURJQVRSSUNkZAIdD2QWAgIBDw8WBB8MBQhPTkNPTE9HWR8NBQhPTkNPTE9HWWRkAh4PZBYCAgEPDxYEHwwFCEhFTFBERVNLHw0FCEhFTFBERVNLZGQCHw9kFgICAQ8PFgQfDAUNQ1BPRURBU0hCT0FSRB8NBQ1DUE9FREFTSEJPQVJEZGQCIA9kFgICAQ8PFgQfDAUMRU1SREFTSEJPQVJEHw0FDEVNUkRBU0hCT0FSRGRkAiEPZBYCAgEPDxYEHwwFDk5VUlNFREFTSEJPQVJEHw0FDk5VUlNFREFTSEJPQVJEZGQCIg9kFgICAQ8PFgQfDAUIRElBTFlTSVMfDQUIRElBTFlTSVNkZAIND2QWAmYPZBYCAgEPZBYEAgMPEA8WBh4NRGF0YVRleHRGaWVsZAULQWNjb3VudFllYXIeDkRhdGFWYWx1ZUZpZWxkBQJJRB4LXyFEYXRhQm91bmRnZBAVCwQyMDEwBDIwMTEEMjAxMgQyMDEzBDIwMTQEMjAxNQQyMDE2BDIwMTcEMjAxOAQyMDE5BDIwMjAVCwExATIBMwE0ATUBNgE3ATgBOQIxMAIxMRQrAwtnZ2dnZ2dnZ2dnZxYBAgZkAgcPEA8WBh8RBQtTYWxhcnlNb250aB8SBQJJRB8TZ2QQFQwHSmFudWFyeQhGZWJydWFyeQVNYXJjaAVBcHJpbANNYXkESnVuZQRKdWx5BkF1Z3VzdAlTZXB0ZW1iZXIHT2N0b2JlcghOb3ZlbWJlcghEZWNlbWJlchUMATEBMgEzATQBNQE2ATcBOAE5AjEwAjExAjEyFCsDDGdnZ2dnZ2dnZ2dnZ2RkAhEPDxYEHwIFATEfAQUDMTc0ZGQCKw8PFgIfBgUkfi9Qcm9maWxlSW1hZ2UuYXNoeD92YWw9MTc0JkJyYW5jaD0xZGQCLQ8PFgIfDQUOV2VsY29tZSAgcm9oaXRkZAI5D2QWAgIBD2QWAgIBD2QWAmYPZBYCAgEPDxYCHw0FATBkZAI7D2QWAmYPZBYCAgEPDxYCHw0FATBkZAJHD2QWAgIDD2QWAgIBD2QWAmYPZBYEAgEPEA8WBh8SBQdTdXBDb2RlHxEFDFN1cHBsaWVyTmFtZR8TZ2QQFQglRUxFQ09OIElORk9STUFUSU9OIFRFQ0hOT0xPR1kgTElNSVRFRA9SYWplc2ggYW5kIFNvbnMOTEcgRWxlY3Ryb25pY3MNTWFjaGluZSBHcm91cBRTQUkgTUVESUNBTCBTRVJWSUNFUx1HU0sgUGhhcm1hY2V1dGljYWxzIFB2dC4gTHRkLhZTaHJlZSBNRURJQ0FMIFNFUlZJQ0VTHUFsbCBJbmRpYSBEcnVnIFN1cHBseSBDb21wYW55FQgDU1AxA1NQNANTUDYDU1A3A1NQOANTUDkEU1AxMARTUDExFCsDCGdnZ2dnZ2dnFgBkAgUPEA8WCB8RBQpicmFuY2huYW1lHxIFCGJyYW5jaGlkHxNnHgdFbmFibGVkaGQQFQEdU1BBUlNIIENSSVRJQ0FMIENBUkUgSE9TUElUQUwVAQExFCsDAWcWAWZkAkkPZBYGAgEPDxYCHwRoZGQCDQ8PFgIfBGdkZAIzD2QWAgIBD2QWAgIFDxAPFggfEQUKYnJhbmNobmFtZR8SBQhicmFuY2hpZB8TZx8UaGQQFQIKLS1TZWxlY3QtLR1TUEFSU0ggQ1JJVElDQUwgQ0FSRSBIT1NQSVRBTBUCATABMRQrAwJnZxYBAgFkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYrBR5jdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ2hpbXMFH2N0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nTnVyc2UFI2N0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nUmFkaW9sb2d5BSNjdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ1BhdGhvbG9neQUkY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdDYXJkaW9sb2d5BSNjdGwwMCRjdGwwMCREZXBhcnRtZW50JEltZ1BlZGlhdHJpYwUgY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdwaHlzaW8FImN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nUGhhcm1hY3kFI2N0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nQW1idWxhbmNlBR5jdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ0RpZXQFIGN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nRG9jdG9yBSBjdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ01vcmd1ZQUjY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdJbnZlbnRvcnkFIGN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nQXNzZXN0BSNjdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ0VxdWlwbWVudAUiY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdEb2N1bWVudAUmY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdIb3VzZUtlZXBpbmcFI2N0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nQmxvb2RCYW5rBSFjdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ0xhdW5kcnkFHmN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nQ3NzZAUkY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdCaW9tZWRpY2FsBSBjdGwwMCRjdGwwMCREZXBhcnRtZW50JEltZ0VuZXJneQUjY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdNYXJrZXRpbmcFIWN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nS2l0Y2hlbgUiY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdEb25hdGlvbgUhY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdQYXlyb2xsBSFjdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ0ZpbmFuY2UFJGN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nU3RhdGljdGljcwUhY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRpbWdVdGlsaXR5BR9jdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ0FsZXJ0BR5jdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ0V4aXQFJGN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1nZV9oZWxwZGVzawUdY3RsMDAkY3RsMDAkRGVwYXJ0bWVudCRidG5xdWUFKWN0bDAwJGN0bDAwJERlcGFydG1lbnQkaW1ncHJvZ3JhbWFuZGV2ZW50BSJjdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ2RpYWx5c2lzBSJjdGwwMCRjdGwwMCREZXBhcnRtZW50JGltZ29uY29sb2d5BSdjdGwwMCRjdGwwMCRMb2dpbjEkaW1ncHJvZmlsZWltYWdlb2ZlbXAFH2N0bDAwJGN0bDAwJExvZ2luJGltZ0Nsb3NlTG9naW4FG2N0bDAwJGN0bDAwJExvZ2luJEltZ1NlYXJjaAUkY3RsMDAkY3RsMDAkQWRtaW5BbGVydCRpbWdDbG9zZUxvZ2luBRxjdGwwMCRjdGwwMCRpbWdkZXBuYXZpZ2F0aW9uBRRjdGwwMCRjdGwwMCRpbWdsb2dpbgUUY3RsMDAkY3RsMDAkaW1nQ2xvc2WoVELIgqj2a9XOuHjOn0L4SoDRrg==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=8hSZfwUUgyjgBhGH_lxodoqBR0PR50clP9nx4TtAuwyKYMA9i7ALql0h5cxNqSCdk3_hfsOn0rCP2wtDzBhyoyq4TX81&amp;t=637101059640000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=HRF38iCq0130axgtc8ALPgSZ8kamo0B77-MlxilERFvxSGmmE3cy1cPybbH7uL4riBr8YbVBOFXcVEyHWX1RqcNwW3N8De3Of7CuSnu4r2K2aHyO3UNutO2p6Rd06rk81mNov-ZCEOhIkVGm10aEHj1z6D41&amp;t=5f65bdf4" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=86dnTPWdao9KJk7vsGI9B6vxi2VtYIH1llJvtuCM5Y3oVjh6AZ0Uv7BVhlXDwErl8xStC1mjFLP4pq49jqPMQOTOafTSZxyjtk5a8HRq3LccEvXW5iPN-leLX3wpLoNyhi6kV7tRAKOeUduP4X1GVYq4nNln_r1xqZc-LnlbptczzClT0&amp;t=ffffffffecf19baa" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=z57DK89WsD1PLc7Q6Hmm2mcCZI8RxKJl92wJEOLoA4lZC8TJtvjS-4vunQtqx_KlvNuQ_sagUSMFBZi5gsSLlBte4MN4Vo5mmWZgDF6gskFaCW-pnAXFBFlYczj2hV0xcXBCRvr2hJ4BiU_LFhTaXYU5sBftRaB1Og0JK3DHhlaTtCM95Kndrq50sEmJFo8eV3vHMQ2&amp;t=ffffffffecf19baa" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Yfq8zZml1oaBWbUgk_n2S0SnN9tXfgxNcYxM7AJooGpyU30NNksgCpVyv8A5Qf394g8qwq2tr7daIs9MTMYtBF8UhGAjmtmPj8TV1sAhTXhApQ_6w7bcVVZjkXfX6Nv2Le47DDC8SPKGOZRhFFCgJpSDy4ywnDwiaGQIoLhBgtZVMkx10&amp;t=ffffffffecf19baa" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=2fy3_mWam-A0iquPY0DqaZL5QuIKZzJ4kxzLHtGYfyRVnLqy5E_ksYXJHeYPLL9JDG-TpYyqLFFSysf4t-PwBX5MwHjRWYfO991m91PApF8Iac_A5RNdazvnKwKx6jJrcVy_Xi4cXa8fO-UizXyB3tywKyk1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=UIvr-yeZxhTAzgyyNQbiaWMwb7r4JYPOesrZQyI_gv7NWZp9VXCcLMNAS6BCGExq5Abh8lyRS4fxz4Z2TMoUxehnUOAn42ixn8StDkiIloH_L7ilUlAy4onnhTZ2oJp88k8H05XO7edYw4EaWf5Of0hqDuXV3CdpHN1Z2miMdXd3g7Wh0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=B0ne9pCABS3u7GnRDCxrqsqM5GR8jjJALoXJmC9w79f7Cd1MoZIGq0IUta3_arGMf2XEV3jp7E8xvKZHZmbn2rJK7mo--qdEHAsfK0iNoNS9lgD-h_ysrvORiKUCBFNSdpx5uoqsz--yPLj0dHLKv0S6ajJDM9XQLfxSv7oZFMNJmhmLm5jNkqi6dC437v63dXE1mg2&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=aGFe4ln45gf9NtmPR3w1F1Wz6r2LYSDNPh70Ca5LM-UO9rT3blEhgLp0D6fzH-rF0ysAIYk0IpEAxMHJjQz9i9Sp1xhSYT3onHcSuM01hsqv3eNfG1xzkJKQt-X1N4CJdelcFbG7cO52MijBkI1M2SkzCyA1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=glrtKqB6semF61DYmoZHVPsgaEN9-KW06Nq8QciolJnZlQ3eFbNPF7URQD7BBLT3WyLuje5u5UNXYhTNzWoTfqhPofD61mFRwoASon7p5Dz5Odvl9LmVEKNu0pjdy-werN9ftquGpj1dJMcHK_h1M3_pddKtXRIvyDNcmhWxLdEk6WOP0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=nRoGymCO1w8vxqQv8PG6Issj_1wl52_LXTDzH7nJO3gqUvEXzoGgeZ9tmvlAc3UXpOP7Nr0qe3B7TK8OU3qbWxeyhclCG_qA5KHgAABShaWsL7hxJBVPZP_nF9u09FOQ6qiQDecXJlHEYDG7fFt2keg29MXj-YQexKGn1PvYU2945ze2f_zyLMkx3LR3vXuEfH6Y6Q2&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Q46_u2Dv0MNUysg_ylfCiwtvurrjkkXqCuEyQjMvEgqv1l9PXyFsmrgJJ8BhrzmMfzMUVaQEf0y8u50jsvUEsf3MOGiBNMvrsC4K6CtlXjTp0WjHFkwF-XsWpC4BrYGwC1NVDY7NootgsleqyD-4fg-ZEMf5yEgKN5X18GZGnI_5ztm40&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=BmdQEXZwkDsUZ-mUcRPz9KlSH1rbu9ZAvNcdTSG5EkpyrVr9QbtSsepdNMIZmxjedA_z4q_pgLAaPf_HixgBBAR0baV0vA4U7UG88bazcho4-N1L4R0ZGNsfUZ5weIc9IqT9cRMmIjZwLdtGnxy7VdzuMFEvh_-P0moX3fR8YWOMHRMO0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=K_tg-cqHbcboh6wil5UEYF6F83qjP7Bbj9LuNq28AE8reh1vdya7Mt6a5lNg25exN35hLd_UTvDcDcT39E_4sjccrZSpENeJRa7L7F-4raAYOo_W2WcUO4I81IxgROQIUPKWkgg5D4n-LJVADELZ9HhsYZUpcNcnFbNsJlVsqPc3_qXC0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=_aufWgeJ6rbqqF7enA1M1BSQAg0inHJnqN_7hCcgXBsz_7_sf_J_DPULHxkOSQZIKyHbbCpdtew1_fq93VhEBt0u1jTZVpmr58Bpn0TvxTS3lzOouuM8MpZVI_2pDv0qXswPLkrUHX7ZMYISRgVIRW4B6X81&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=KXsW7_QbgAfbZTksGo6yhnfvRdv_mYYjKmkTiYbRdJUnllZ9wPNxHIgUx4NhR1ieP3XWIA6ZO8d4OApNZreJQthfMo4xlrJsdByQYL2eqdyPZn1jZeeRWL6AV_xj_vtSDVcxLCQQYr9xD0V6l8Fkqktiw6BepBRu5B0RrNqLxnE4MptJVfH7sNN5KCoeGYV_kZR1JQ2&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=add0OtfWEgtPon6PiajXedSnAbZ4T7Wz5nWSUlvJXEgqAmOqR_puswBoq_0T2RnW9T_50oh7unaXuEqcXcYP19gg5qSArF8nQCEaXVCuZmp3371rEU_Nzxsv304YPzl93Gv4pg9Xr52Ba26f5I-bgWpQBZ6TvwwHhFE4d8-cetWtk4990&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=vp2xTt0cBrp5HNvb6Z_DpPpt_sPHyLtZKnAFewsWMF_GuG-1o8K2Np2oLZ4IDszW5P_YEw7EK74HFeh2N9dseWF6DD4b9jTiKtXMaXTK5UtSSmdzH2Ko5xbAfxiqYY5JH8Pdxl-MCgfnFUEPxRkYesUBEmo1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=-irUycrzqrJ1fL-OkrdnLoYkpcWin6NmJcxTXrzPu4GzP4Z4I0hfN0Rgl6WgvRdKIqNskC9r3hHD5vSBpRKIIJiP3noghKXMeaDKMdndgDLvZUd-P0xlv1iqfxh2Zji4q-GAcLE6P-Ap4KdKRh79XmWCtf8jlFXCsUMhjUdTHMmllSXS0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=4ifI1q1kRqGFAEVINi4trQhlwUqw9ncT364AvQAfPgoaObEMeplJDCj9Lj2PH4YikyIRyI76OZO-LJZTnKJHMz1CPoLfDwtA_TyO3-6v7w9OL8lvgTbqnAcTkafifGcwBMQC0wzOKqcGSODY4oigeZZj5VFeX59i64uCRcujHzCsK8ia0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=8l3X-x4YbZIazN5S8-lidbiKC-4C_PJxemDirezigPkAqCP9KQWAZ2kTcFF7V8ZeoHJf5EyAQ6X6FLCBxrw9EnXgFSrPOOVbVXEr-QBp-A8gOpIcNYj4UpQtj9u4K-AazVjejk-nuthNqcUATXAAmHSP3TE1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=7UPsZugpSbN4vhLWluD-lp9VRkLJ3i_PB7-YY51drx6iDcGV96Dg5nS2nbhW3HA00IVP8DG1MQGwF6CgnjkCUAlH1NL_4uj2JAZ27P-L_lsfGRmVNIhDnK92DjF0i5a2ZkJ7vnL6dErs4jhb-RqOUbGa9L0YAjElCagaRIPztZ5GdEJG0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B89156E2">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
+</div>
+    <input type="hidden" name="ctl00$ctl00$hdndepnav" id="hdndepnav">
+    
+    <div id="pnldepartmentnavigation" class="login-dropdown dropdown-lr animated flipInX" style="display: none; position: fixed; z-index: 100001;">
+	
+        <div id="imgCloseLogin" class="close-icon">
+            <i class="fa fa-close"></i>
+        </div>
+        <div id="pnldep">
+		
+            <input type="hidden" name="ctl00$ctl00$Department$hfUserCode" id="Department_hfUserCode" value="174">
+		          <div class="login-dropdown dropdown-lr animated flipInX width-800">
+		          	<ul class="login-grid">
+			  				<li>
+			  				
+                                    <input type="image" name="ctl00$ctl00$Department$imghims" id="Department_imghims" class="sprite sprite-hims" src="../images/blank.png" align="absmiddle">
+			  					
+			  					<p>HIMS</p>
+			  				</li>  				
+			  				<li>
+			  					
+                                  <input type="image" name="ctl00$ctl00$Department$imgNurse" id="Department_imgNurse" title="NURSE DEPARTMENT" class="sprite sprite-nursing-department" src="../images/blank.png">
+			  					<p>Nursing Department</p>
+			  				</li>  
+			  				<li>
+			  				<input type="image" name="ctl00$ctl00$Department$imgRadiology" id="Department_imgRadiology" title="RADIOLOGY" class="sprite sprite-radiology" src="../images/blank.png" align="absmiddle">
+			  					
+			  					<p>Radiology</p>
+			  				</li> 				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgPathology" id="Department_imgPathology" title="PATHOLOGY" class="sprite sprite-pathology" src="../images/blank.png" align="absmiddle">
+			  					<p>Pathology</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					<input type="image" name="ctl00$ctl00$Department$imgCardiology" id="Department_imgCardiology" title="CARDIOLOGY" class="sprite sprite-cardiology" src="../images/blank.png" align="absmiddle">
+			  					<p>Cardiology</p>
+			  				</li>  				
+			  				<li>
+			  				 <input type="image" name="ctl00$ctl00$Department$ImgPediatric" id="Department_ImgPediatric" title="Pediatric" class="sprite sprite-pediatric" src="../images/blank.png" align="absmiddle">
+			  					
+			  					<p>Pediatric</p>
+			  				</li>  				
+			  				<li>
+			  				<input type="image" name="ctl00$ctl00$Department$imgphysio" id="Department_imgphysio" title="PHYSIOTHERAPHY AND REHABILITATION" class="sprite sprite-physiotheraphy-and-rehabilatation" src="../images/blank.png" align="absmiddle">
+			  					
+			  					<p>Physiotheraphy &amp; Rehabilatation</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgPharmacy" id="Department_imgPharmacy" title="PHARMACY" class="sprite sprite-pharmacy" src="../images/blank.png" align="absmiddle">
+			  					<p>Pharmacy</p>
+			  				</li>  				
+			  				<li>
+			  				 <input type="image" name="ctl00$ctl00$Department$imgAmbulance" id="Department_imgAmbulance" title="AMBULANCE" class="sprite sprite-ambulance" src="../images/blank.png" align="absmiddle">
+			  					
+			  					<p>Ambulance</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					<input type="image" name="ctl00$ctl00$Department$imgDiet" id="Department_imgDiet" title="DIET" class="sprite sprite-diet" src="../images/blank.png" align="absmiddle">
+			  					<p>Diet</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgDoctor" id="Department_imgDoctor" title="DOCTOR'S DASHBOARD" class="sprite sprite-doctors-dashboard" src="../images/blank.png" align="absmiddle">
+			  					<p>Doctor's Dashboard</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					<input type="image" name="ctl00$ctl00$Department$imgMorgue" id="Department_imgMorgue" title="MORGUE" class="sprite sprite-morgue" src="../images/blank.png" align="absmiddle">
+			  					<p>Morgue</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgInventory" id="Department_imgInventory" title="INVENTORY MANAGEMENT" class="sprite sprite-inventory-management" src="../images/blank.png" align="absmiddle">
+			  					<p>Inventory Management</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgAssest" id="Department_imgAssest" title="ASSET MANAGEMENT" class="sprite sprite-asset-management" src="../images/blank.png" align="absmiddle">
+			  					<p>Asset Management</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					<input type="image" name="ctl00$ctl00$Department$imgEquipment" id="Department_imgEquipment" title="EQUIPMENT MANAGEMENT" class="sprite sprite-equipment-management" src="../images/blank.png" align="absmiddle">
+			  					<p>Equipment Management</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					  <input type="image" name="ctl00$ctl00$Department$imgDocument" id="Department_imgDocument" title="DOCUMENT MANAGEMENT" class="sprite sprite-document-management" src="../images/blank.png" align="absmiddle">
+			  					<p>Document Management</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgHouseKeeping" id="Department_imgHouseKeeping" title="HOUSE KEEPING" class="sprite sprite-housekeeping" src="../images/blank.png" align="absmiddle">
+			  					<p>Housekeeping</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					  <input type="image" name="ctl00$ctl00$Department$imgBloodBank" id="Department_imgBloodBank" title="BLOOD BANK" class="sprite sprite-blood-bank" src="../images/blank.png" align="absmiddle">
+			  					<p>Blood Bank</p>
+			  				</li>  				
+			  				<li>
+			  				 <input type="image" name="ctl00$ctl00$Department$imgLaundry" id="Department_imgLaundry" title="LAUNDRY" class="sprite sprite-laundry" src="../images/blank.png" align="absmiddle">
+			  					
+			  					<p>Laundry</p>
+			  				</li>  				
+			  				<li>
+			  				 <input type="image" name="ctl00$ctl00$Department$imgCssd" id="Department_imgCssd" title="CSSD" class="sprite sprite-cssd" src="../images/blank.png" align="absmiddle">
+			  					
+			  					<p>CSSD</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgBiomedical" id="Department_imgBiomedical" title="BIO-MEDICAL WASTE" class="sprite sprite-bio-medical-waste" src="../images/blank.png" align="absmiddle">
+			  					<p>Bio-Medical Waste</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$ImgEnergy" id="Department_ImgEnergy" title="ENERGY AUDIT" class="sprite sprite-energy-audit" src="../images/blank.png" align="absmiddle">
+			  					<p>Energy Audit</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgMarketing" id="Department_imgMarketing" title="MARKETING" class="sprite sprite-marketing" src="../images/blank.png" align="absmiddle">
+			  					<p>Marketing</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgKitchen" id="Department_imgKitchen" title="KITCHEN" class="sprite sprite-kitchen" src="../images/blank.png" align="absmiddle">
+			  					<p>Kitchen</p>
+			  				</li>  				
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgDonation" id="Department_imgDonation" title="DONATION" class="sprite sprite-donation" src="../images/blank.png" align="absmiddle">
+			  					<p>Donation</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgPayroll" id="Department_imgPayroll" class="sprite sprite-hr-and-payroll" src="../images/blank.png" align="absmiddle">
+			  					<p>HR and Payroll</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgFinance" id="Department_imgFinance" title="ACCOUNTS AND FINANCE" class="sprite sprite-account-and-finance" src="../images/blank.png" align="absmiddle">
+			  					<p>Account and Finance</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgStatictics" id="Department_imgStatictics" title="Business Intelligence Reports" class="sprite sprite-business-intelligence-reports" src="../images/blank.png" align="absmiddle">
+			  					<p>Business Intelligence Reports</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgUtility" id="Department_imgUtility" title="UTILITIES" class="sprite sprite-utilities" src="../images/blank.png" align="absmiddle">
+			  					<p>Utilities</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgAlert" id="Department_imgAlert" title="ALERT" class="sprite sprite-alerts" src="../images/blank.png" align="absmiddle">
+			  					<p>Alerts</p>
+			  				</li>
+			  				<li>
+			  					
+			  			<input type="image" name="ctl00$ctl00$Department$imgExit" id="Department_imgExit" title="EXIT" class="sprite sprite-pacs-integration" src="../images/blank.png" align="absmiddle">
+			  					<p>PACS Integration</p>
+			  				</li>
+			  				<li>
+			  					
+			  					   <input type="image" name="ctl00$ctl00$Department$imge_helpdesk" id="Department_imge_helpdesk" title="Help_Desk" class="sprite sprite-help-desk" src="../images/blank.png" align="absmiddle">
+			  					<p>Help Desk</p>
+			  				</li>
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$btnque" id="Department_btnque" title="Queue Management" class="sprite sprite-quee-mangemant" src="../images/blank.png" align="absmiddle">
+			  					<p>Queue Management</p>
+			  				</li>	
+			  				<li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgprogramandevent" id="Department_imgprogramandevent" title="Programmes and events" class="sprite sprite-programs-and-events" src="../images/blank.png" align="absmiddle">
+			  					<p>Programs and Events</p>
+			  				</li>	  	
+                          <li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgdialysis" id="Department_imgdialysis" title="Dialysis" class="sprite sprite-dialysis" src="../images/blank.png" align="absmiddle">
+			  					<p>Dialysis</p>
+			  				</li>	
+                          
+                          <li>
+			  					
+			  					 <input type="image" name="ctl00$ctl00$Department$imgoncology" id="Department_imgoncology" title="Oncology" class="sprite sprite-oncology" src="../images/blank.png" align="absmiddle">
+			  					<p>Oncology</p>
+			  				</li>	  					
+			  			</ul>		            
+		          </div>
+		        
+
+		       
+	
+
+
+        
+	</div>
+    
+</div>
+    <input type="hidden" name="ctl00$ctl00$Hidden1" id="Hidden1">
+    
+    <div id="pnlLogin" class="login-dropdown dropdown-lr animated flipInX" style="display: none; position: fixed; z-index: 100001;">
+	
+        <div id="closeimg" class="close-icon">
+            <i class="fa fa-close"></i>
+        </div>
+        <div id="plnlogin1">
+		
+            <div onkeypress="javascript:return WebForm_FireDefaultButton(event, 'Login1_btnlogin')">
+			
+
+
+		</div>
+<input type="hidden" name="ctl00$ctl00$Login1$hfUserCode" id="Login1_hfUserCode" value="174">
+<div id="Login1_logoutprofile" class="loginbg">
+<div class="row padding-horizontal-15">
+		                	<div class="col-xs-4">
+		                	    <div class="login-user-big"><input type="image" name="ctl00$ctl00$Login1$imgprofileimageofemp" id="Login1_imgprofileimageofemp" src="../ProfileImage.ashx?val=174&amp;Branch=1"></div>
+		                	</div>
+		                	<div class="col-xs-8">
+		                		<h3 id="Login1_lblEmpname">Welcome  rohit</h3>
+		                		
+		                	</div>
+		                </div>
+
+		                <div class="panel-footer">
+		                  	<div class="row">
+			                    <div class="col-xs-6">
+                                   <input type="submit" name="ctl00$ctl00$Login1$imgchangepassword" value="Change Password" id="Login1_imgchangepassword" class="btn btn-default">			                                            
+			                    </div>
+			                    <div class="col-xs-6 text-right">
+                                   <input type="submit" name="ctl00$ctl00$Login1$imglogot" value="Logout" id="Login1_imglogot" class="btn btn-danger">
+			                    </div>
+		                	</div>
+		            	</div>
+		              </div>
+		              
+        
+	</div>
+    
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1', ['tctl00$ctl00$Login$uplnksalarySlip','Login_uplnksalarySlip','tctl00$ctl00$Login$UpdatePanel1','Login_UpdatePanel1','tctl00$ctl00$AdminAlert$UpdatePanel1','AdminAlert_UpdatePanel1','tctl00$ctl00$UpdatePanel1','UpdatePanel1','tctl00$ctl00$UpdatePanel9','UpdatePanel9','fctl00$ctl00$UpdatePanel2','UpdatePanel2','tctl00$ctl00$updche','updche','fctl00$ctl00$upAdmin','upAdmin','tctl00$ctl00$update1','update1'], ['ctl00$ctl00$AdminAlert$Timer1','AdminAlert_Timer1','ctl00$ctl00$AdminTimer','AdminTimer'], [], 90, 'ctl00$ctl00');
+//]]>
+</script>
+
+    
+<div id="Login_pnlLogin" class="modelpopup department" style="overflow: auto; display: none; position: fixed; z-index: 100001;">
+	
+    <div style="position: absolute; right: 5px; top: 5px;">
+        <input type="image" name="ctl00$ctl00$Login$imgCloseLogin" id="Login_imgCloseLogin" src="../App_Images/ClosePopup.png" style="height:16px;width:16px;">
+    </div>
+    <div class="dash_depthead">
+            Departments        
+        <a id="Login_lnkall" href="javascript:__doPostBack('ctl00$ctl00$Login$lnkall','')" style="float:right">All Dep</a>
+        <input type="image" name="ctl00$ctl00$Login$ImgSearch" id="Login_ImgSearch" src="../App_Images/search.png" style="float:right">
+          <input name="ctl00$ctl00$Login$txtDepartmentserach" type="text" id="Login_txtDepartmentserach" class="pull-right" placeholder="Search by Department Name" style="width:191px;float:right">
+          
+     </div>
+     
+    <div style="width: 100%; overflow: hidden;">
+        <table id="Login_dlModule" cellspacing="0" style="width:100%;border-collapse:collapse;">
+		<tbody><tr>
+			<td>
+                    <a id="Login_dlModule_chkModule_0" title="HIMS" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl00$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">HIMS</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_1" title="NURSE DEPARTMENT" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl01$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">NURSE DEPARTMENT</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_2" title="AMBULANCE" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl02$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">AMBULANCE</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_3" title="RADIOLOGY" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl03$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">RADIOLOGY</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_4" title="PATHOLOGY" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl04$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">PATHOLOGY</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_5" title="PHARMACY" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl05$chkModule','')" style="display:inline-block;background-color:#9A0000;width:150px;width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:white !important;">PHARMACY</a>
+            </td>
+		</tr><tr>
+			<td>
+                    <a id="Login_dlModule_chkModule_6" title="DIET" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl06$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">DIET</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_7" title="INVENTORY MANAGEMENT" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl07$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">INVENTORY MANAGEMENT</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_8" title="EQUIPMENT MANAGEMENT" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl08$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">EQUIPMENT MANAGEMENT</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_9" title="HOUSE KEEPING" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl09$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">HOUSE KEEPING</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_10" title="LAUNDRY" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl10$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">LAUNDRY</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_11" title="MARKETING" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl11$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">MARKETING</a>
+            </td>
+		</tr><tr>
+			<td>
+                    <a id="Login_dlModule_chkModule_12" title="KITCHEN" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl12$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">KITCHEN</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_13" title="PAYROLL" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl13$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">PAYROLL</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_14" title="MORGUE" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl14$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">MORGUE</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_15" title="DOCUMENT MANAGEMENT" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl15$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">DOCUMENT MANAGEMENT</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_16" title="FINANCE" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl16$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">FINANCE</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_17" title="BUSINESS INTELLIGENCE DASHBOARD" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl17$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">BUSINESS INTELLIGENCE DASHBOARD</a>
+            </td>
+		</tr><tr>
+			<td>
+                    <a id="Login_dlModule_chkModule_18" title="UTILITIES" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl18$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">UTILITIES</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_19" title="ALERT" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl19$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ALERT</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_20" title="ASSET" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl20$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ASSET</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_21" title="DONATION" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl21$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">DONATION</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_22" title="ENERGY" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl22$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ENERGY</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_23" title="CSSD" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl23$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">CSSD</a>
+            </td>
+		</tr><tr>
+			<td>
+                    <a id="Login_dlModule_chkModule_24" title="PHYSIOTHERAPHY AND REHABILITATION" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl24$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">PHYSIOTHERAPHY AND REHABILITATION</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_25" title="BLOOD BANK" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl25$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">BLOOD BANK</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_26" title="BIO-MEDICAL WASTE" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl26$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">BIO-MEDICAL WASTE</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_27" title="CARDIOLOGY" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl27$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">CARDIOLOGY</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_28" title="PEDIATRIC" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl28$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">PEDIATRIC</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_29" title="ONCOLOGY" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl29$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ONCOLOGY</a>
+            </td>
+		</tr><tr>
+			<td>
+                    <a id="Login_dlModule_chkModule_30" title="HELPDESK" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl30$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">HELPDESK</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_31" title="CPOEDASHBOARD" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl31$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">CPOEDASHBOARD</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_32" title="EMRDASHBOARD" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl32$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">EMRDASHBOARD</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_33" title="NURSEDASHBOARD" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl33$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">NURSEDASHBOARD</a>
+            </td><td>
+                    <a id="Login_dlModule_chkModule_34" title="DIALYSIS" href="javascript:__doPostBack('ctl00$ctl00$Login$dlModule$ctl34$chkModule','')" style="display:inline-block;width:150px;width: 150px;
+                    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">DIALYSIS</a>
+            </td><td></td>
+		</tr>
+	</tbody></table>
+    </div>
+    <div style="color: #0262AA; margin-right: 10px; text-transform: uppercase; font-size: 12px;
+        margin-top: 10px; font-weight: 600;">
+        <div id="Login_uplnksalarySlip">
+		
+                
+            
+	</div>
+        <div class="modlink">
+            Click On Department Name To Navigate »
+        </div>
+    </div>
+
+
+
+
+
+   
+
+
+    <div>
+        <div id="Login_UpdatePanel1">
+		
+                <div id="Login_Panel1" style="width:45%;">
+			
+                    <fieldset>
+                        <table width="50%">
+                            <tbody><tr>
+                                <td>
+                                    <span id="Login_lblYear">Year</span>
+                                </td>
+                                <td>
+                                    <select name="ctl00$ctl00$Login$ddlYear" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$Login$ddlYear\',\'\')', 0)" id="Login_ddlYear" style="width:60px;">
+				<option value="1">2010</option>
+				<option value="2">2011</option>
+				<option value="3">2012</option>
+				<option value="4">2013</option>
+				<option value="5">2014</option>
+				<option value="6">2015</option>
+				<option selected="selected" value="7">2016</option>
+				<option value="8">2017</option>
+				<option value="9">2018</option>
+				<option value="10">2019</option>
+				<option value="11">2020</option>
+
+			</select>
+                                </td>
+                                <td>
+                                    <span id="Login_Label6" style="display:inline-block;width:43px;">Month</span>
+                                </td>
+                                <td>
+                                    <select name="ctl00$ctl00$Login$dddlMonth" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$Login$dddlMonth\',\'\')', 0)" id="Login_dddlMonth" style="width:90px;">
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+
+			</select>
+                                </td>
+                                <td>
+                                    <input type="submit" name="ctl00$ctl00$Login$btnPatientSalarySlip" value="Salary Slip" id="Login_btnPatientSalarySlip" class="btn_red">
+                                </td>
+                            </tr>
+
+                        </tbody></table>
+                    </fieldset>
+
+                       <fieldset>
+                        <table width="100%">
+                            <tbody><tr>
+                                <td align="center">
+
+
+                                        <input type="submit" name="ctl00$ctl00$Login$Button1" value="Global Search" id="Login_Button1" class="btn_red">
+
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                           </fieldset>
+
+
+
+                
+		</div>
+            
+	</div>
+    </div>
+    <input type="hidden" name="ctl00$ctl00$Login$hfUserCode" id="Login_hfUserCode" value="174">
+
+</div>
+
+    <span id="AdminAlert_Timer1" style="visibility:hidden;display:none;"></span>
+<div id="AdminAlert_UpdatePanel1">
+	
+        <input type="hidden" name="ctl00$ctl00$AdminAlert$HiddenField1" id="AdminAlert_HiddenField1">
+        
+        <div id="AdminAlert_pnlLogin" class="modelpopup department" style="overflow: auto; display: none; position: fixed; z-index: 100001;">
+		
+            <div style="position: absolute; right: 5px; top: 5px;display:none">
+                <input type="image" name="ctl00$ctl00$AdminAlert$imgCloseLogin" id="AdminAlert_imgCloseLogin" src="../App_Images/ClosePopup.png" style="height:16px;width:16px;">
+            </div>
+            <div class="dash_depthead">
+                Administrator Alert !
+            </div>
+            <div style="font-size: 15px; height: 150px;overflow:auto">
+                <span id="AdminAlert_spanAdminMsg"></span>
+            </div>
+            <div style="float: right">
+                <input type="submit" name="ctl00$ctl00$AdminAlert$btnSeenMsg" value="Okay" id="AdminAlert_btnSeenMsg" class="btn_red">
+            </div>
+        
+	</div>
+    
+<div id="AdminAlert_mpeAdminAlerts_backgroundElement" class="modelpopupbg" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></div>
+
+    <div>
+        <div id="wrapper">
+            <div id="main-div">
+                <div id="header">
+                    <div class="logo">
+                        <img src="../images/logo.png"></div>
+                    <ul class="navbar-right">
+                       <li>	<button class="btn header-btn-collapse-nav" data-target=".header-nav-main" data-toggle="collapse"><i class="fa fa-bars"></i></button>
+				<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+				
+							
+					
+					
+				</div>
+			</li>
+                        <li class="dropdown postlogin">
+                            <input type="image" name="ctl00$ctl00$imgdepnavigation" id="imgdepnavigation" src="../images/icons/menu.png">
+                        </li>
+                        <li class="dropdown postlogin">
+                            <input type="image" name="ctl00$ctl00$imglogin" id="imglogin" class="login-user" src="../ProfileImage.ashx?val=174&amp;Branch=1">
+                        </li>
+                    </ul>
+                    <div class="header-left">
+                        <div class="top-nav top-nav1">
+                            <ul>
+                                <li><a href="../Admin/ChangePassword.aspx">Change Password</a></li>
+                                <li><a href="../Login_Admin.aspx?From=Logout" class="border-none">Logout</a></li>
+                            </ul>
+                            <div style="clear">
+                            </div>
+                            <div class="uplable">
+                                <span id="lblUserName">Welcome  rohit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:none;">   
+                <div class="menu">
+                    
+                    
+                    
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="ipd-nav" style="margin-bottom: 10px;">
+                <span id="Timer1" style="visibility:hidden;display:none;"></span>
+                <input type="hidden" name="ctl00$ctl00$cpe_ClientState" id="cpe_ClientState" value="true">
+                <div class="chatpopup" style="display: none;">
+                    <div id="adt">
+	
+                        <div id="pnlChat" class="modalHandle">
+		
+                            <div class="chatpopuphead">
+                                <h2 style="color: #E6E6FA" onclick="add();">
+                                    Please Click Here To Start Chat With User</h2>
+                                <span class="glyphicon glyphicon-chevron-down"></span><span class="notification">
+                                    <div id="UpdatePanel1">
+			
+                                            <img src="../App_Images/NotificationImage.png" width="15" height="15">
+                                            <a id="lnknot" href="javascript:__doPostBack('ctl00$ctl00$lnknot','')">0</a>
+                                        
+		</div>
+                                </span>
+                            </div>
+                        
+	</div>
+                        <div class="clr">
+                        </div>
+                        <div>
+                            <div id="collab" style="height: 1px; overflow: hidden; display: none;"><div id="" style="height: auto; overflow-x: hidden;">
+		
+                                <div class="message">
+                                    <div id="UpdatePanel9">
+			
+                                            <textarea name="ctl00$ctl00$txtMessage" rows="2" cols="20" id="txtMessage" style="height:50px;width:250px;"></textarea>
+                                            <input type="submit" name="ctl00$ctl00$btnSendMessage" value="Send" id="btnSendMessage" class="chatbtn">
+                                            <input type="submit" name="ctl00$ctl00$btnCloseMessage" value="Clear" id="btnCloseMessage" class="chatbtn">
+                                        
+		</div>
+                                </div>
+                                <div style="display: block; min-height: 200px !important;">
+                                    
+                                    <div id="UpdatePanel2">
+			
+                                            <div id="iframe">
+                                            </div>
+                                        
+		</div>
+                                </div>
+                            
+	</div></div>
+                        </div>
+                    
+</div>
+                </div>
+                <div id="updche">
+	
+                        <a id="lnknotificationfor" href="javascript:__doPostBack('ctl00$ctl00$lnknotificationfor','')" style="display: none;">0</a>
+                    
+</div>
+                <span id="AdminTimer" style="visibility:hidden;display:none;"></span>
+                <div id="upAdmin">
+	
+                        <span id="lblAdmin"></span>
+                        <span id="lblClose"></span>
+                        
+                        <div id="pnlAdmin" class="popop_panels" style="width: 543px; display: none; position: fixed; z-index: 100001;">
+		
+                            <table>
+                                <tbody><tr>
+                                    <td align="center" class="sub-head" style="font-weight: bold;">
+                                        IPD Discharge Alert
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tbody><tr>
+                                                <td>
+                                                    <span id="lblPatient">Patient:</span>
+                                                </td>
+                                                <td>
+                                                    <span id="lblPatientName" style="display:inline-block;width:150px;"></span>
+                                                </td>
+                                                <td>
+                                                    <span id="lblBedDetails" style="display:inline-block;width:68px;">Bed Details:</span>
+                                                </td>
+                                                <td>
+                                                    <span id="lblPatientBedDetails" style="display:inline-block;width:250px;"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <span id="lblMessage" style="display:inline-block;width:530px;"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <input type="submit" name="ctl00$ctl00$btnAdmin" value="OK" id="btnAdmin" class="btn_red">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        
+	</div>
+                    
+<div id="ModalPopupExtender1_backgroundElement" class="modalBackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></div>
+                <span id="PURPAy" style="display:inline-block;width:530px;display: none;"></span>
+                
+                <input type="hidden" name="ctl00$ctl00$hfBranchId" id="hfBranchId">
+                <div id="PnlPurreturn" style="width: 543px; text-align: right; display: none; position: fixed; z-index: 100001;">
+	
+                    <input type="image" name="ctl00$ctl00$imgClose" id="imgClose" src="../App_Images/ClosePopup.png" style="height:25px;">
+                    <div id="Panel1" class="popop_panels" style="width:100%;">
+		
+                        <div id="update1">
+			
+                                <table class="style1">
+                                    <tbody><tr class="sub-head">
+                                        <td align="center">
+                                            Supplier List
+                                        </td>
+                                        <td align="center" colspan="2">
+                                            Medicine Bill List
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" rowspan="4" valign="top" width="250px">
+                                            <select size="4" name="ctl00$ctl00$lstsupp" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$lstsupp\',\'\')', 0)" id="lstsupp" style="height:295px;width:250px;">
+				<option value="SP1">ELECON INFORMATION TECHNOLOGY LIMITED</option>
+				<option value="SP4">Rajesh and Sons</option>
+				<option value="SP6">LG Electronics</option>
+				<option value="SP7">Machine Group</option>
+				<option value="SP8">SAI MEDICAL SERVICES</option>
+				<option value="SP9">GSK Pharmaceuticals Pvt. Ltd.</option>
+				<option value="SP10">Shree MEDICAL SERVICES</option>
+				<option value="SP11">All India Drug Supply Company</option>
+
+			</select>
+                                        </td>
+                                        <td align="left">
+                                            <span id="lblbranch">Hospital</span>
+                                        </td>
+                                        <td align="left" width="280">
+                                            <select name="ctl00$ctl00$ddlBranch" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$ddlBranch\',\'\')', 0)" id="ddlBranch" disabled="disabled" class="aspNetDisabled" style="width:200px;">
+				<option selected="selected" value="1">SPARSH CRITICAL CARE HOSPITAL</option>
+
+			</select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="2">
+                                            <input name="ctl00$ctl00$txtSearchbillno" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$txtSearchbillno\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="txtSearchbillno" style="width:250px;" class="watermark">
+                                            <input type="hidden" name="ctl00$ctl00$TextBoxWatermarkExtender2_ClientState" id="TextBoxWatermarkExtender2_ClientState">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="2">
+                                            <input name="ctl00$ctl00$txtSearchbillDate" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$txtSearchbillDate\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="txtSearchbillDate" style="width:250px;" class="watermark">
+                                            
+                                            <input type="hidden" name="ctl00$ctl00$TextBoxWatermarkExtender1_ClientState" id="TextBoxWatermarkExtender1_ClientState">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" colspan="2">
+                                            <select size="4" name="ctl00$ctl00$lstsuppMediBill" id="lstsuppMediBill" style="height:200px;width:250px;">
+
+			</select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <input name="ctl00$ctl00$txtSearchSuppname" type="text" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$txtSearchSuppname\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="txtSearchSuppname" style="width:250px;" class="watermark">
+                                            <input type="hidden" name="ctl00$ctl00$TextBoxWatermarkExtender3_ClientState" id="TextBoxWatermarkExtender3_ClientState">
+                                        </td>
+                                        <td align="right" colspan="2" width="120px">
+                                            <input type="submit" name="ctl00$ctl00$btnSave" value="OK" id="btnSave" class="btn_red">
+                                            <input type="submit" name="ctl00$ctl00$Button2" value="Cancel" id="Button2" class="btn_red">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            
+		</div>
+                    
+	</div>
+                
+</div>
+                
+ 
+    <div id="wrapper">
+        &nbsp;
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+                <td valign="top" style="width: 20% !important;">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tbody><tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="ContentPlaceHolder1_PnlPharmacy" style="height:480px;width:250px;overflow:auto;">
+	
+                                    <table width="100%" style="background: #efefef;" cellpadding="0" cellspacing="0">
+                                        <tbody><tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnDailyMedicinePurchase" value="Daily Medicine Purchase" id="ContentPlaceHolder1_btnDailyMedicinePurchase" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPeriodWiseMedicinePurchase" value="Periodic Medicine Purchase" id="ContentPlaceHolder1_btnPeriodWiseMedicinePurchase" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                        
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                         <tr style="display :none ;">
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnStockInHandSummary" value="Stock In Hand Report(Summary)" id="ContentPlaceHolder1_btnStockInHandSummary" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnSaleReviewReport" value="Sale Review Report(with User)" id="ContentPlaceHolder1_btnSaleReviewReport" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnRateReviewReport" value="Rate Review Report" id="ContentPlaceHolder1_btnRateReviewReport" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnSaleReturnReview" value="Sale Return Review Report(with User)" id="ContentPlaceHolder1_btnSaleReturnReview" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnpharmCreditNote" value="Pharmacy Distributor's Credit Note Report" id="ContentPlaceHolder1_btnpharmCreditNote" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                           <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnBefore3MonthExpMed" value="Product Expiry Details" id="ContentPlaceHolder1_btnBefore3MonthExpMed" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMaterialReceiptNote" value="Material Receipt Note Report(Distrributor Wise)" id="ContentPlaceHolder1_btnMaterialReceiptNote" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnProductReferenced" value="Product Referenced by Doctor Report" id="ContentPlaceHolder1_btnProductReferenced" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                           <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                            <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPharmacyMediDetails" value="Pharmacy Medicine Details" id="ContentPlaceHolder1_btnPharmacyMediDetails" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPeriodandmedicineWiseMedicinePurchase" value="Periodic Medicine wise Purchase" id="ContentPlaceHolder1_btnPeriodandmedicineWiseMedicinePurchase" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicinePurchaseReturn" value="Medicine Purchase Return" id="ContentPlaceHolder1_btnMedicinePurchaseReturn" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnsupplierwise" value="Purchase All" id="ContentPlaceHolder1_btnsupplierwise" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnItemWiseMedicinePurchase" value="Sales All" id="ContentPlaceHolder1_btnItemWiseMedicinePurchase" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnbillwisesale" value="BillNo Wise Sale" id="ContentPlaceHolder1_btnbillwisesale" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnSLWise" value="Login Wise Sale Report" id="ContentPlaceHolder1_btnSLWise" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnDailyMedicineConsumption" value="Daily Medicine Consumption" id="ContentPlaceHolder1_btnDailyMedicineConsumption" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPeriodicMedicineConsumption" value="Periodic Medicine Consumption" id="ContentPlaceHolder1_btnPeriodicMedicineConsumption" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPatientMedicineSale" value="Patient Medicine Sale" id="ContentPlaceHolder1_btnPatientMedicineSale" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineSaleReturn" value="Medicine Sale Return" id="ContentPlaceHolder1_btnMedicineSaleReturn" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$BtnDailySalesReturn" value="Daily Sales Return" id="ContentPlaceHolder1_BtnDailySalesReturn" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnItemDept" value="Issue To Dept" id="ContentPlaceHolder1_btnItemDept" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineWisePatient" value="Patient Medicine Consumption" id="ContentPlaceHolder1_btnMedicineWisePatient" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineReceipt" value="Medicine Receipt" id="ContentPlaceHolder1_btnMedicineReceipt" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineReOrderLabel" value="Medicine Re-Order Level" id="ContentPlaceHolder1_btnMedicineReOrderLabel" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineStockValuation" value="Medicine Stock Valuation" id="ContentPlaceHolder1_btnMedicineStockValuation" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineWastage" value="Periodic Medicine Wastage" id="ContentPlaceHolder1_btnMedicineWastage" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineStockAlert" value="Medicine Stock Alert" id="ContentPlaceHolder1_btnMedicineStockAlert" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnAllMedicine" value="All Purchase Medicine" id="ContentPlaceHolder1_btnAllMedicine" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineProfit" value="Periodic Medicine Sale Profit" id="ContentPlaceHolder1_btnMedicineProfit" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnMedicineStock" value="Periodic Medicine Stock" id="ContentPlaceHolder1_btnMedicineStock" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnGenericWise" value="Generic Medicine Sale" id="ContentPlaceHolder1_btnGenericWise" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnSheduleH1" value="Shedule H1 Drug Sale" id="ContentPlaceHolder1_btnSheduleH1" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnSupplierDetails" value="All Supplier Details" id="ContentPlaceHolder1_btnSupplierDetails" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnLoginUserwiseMedicine" value="Login User Activity Report" id="ContentPlaceHolder1_btnLoginUserwiseMedicine" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        
+                                            <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPatientwiseMedicineSale" value="Patientwise Medicine Sale" id="ContentPlaceHolder1_btnPatientwiseMedicineSale" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPatientOutstand" value="Patient Out Standing Report" id="ContentPlaceHolder1_btnPatientOutstand" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$Button4" value="IPD Patient Outstanding Report" id="ContentPlaceHolder1_Button4" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnNonmovmnt" value="Non Movement Product (Agewise)" id="ContentPlaceHolder1_btnNonmovmnt" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPharmConcession" value="Pharmacy Concession Report" id="ContentPlaceHolder1_btnPharmConcession" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnmedicinebtnCARDEX" value="CARDEX Report" id="ContentPlaceHolder1_btnmedicinebtnCARDEX" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                              <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPurchasePaymentReport" value="Medicine Purchase Payment details Report" id="ContentPlaceHolder1_btnPurchasePaymentReport" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$btnPurchasepricewiseStock" value="Purchase Pricewise Medicine Stock" id="ContentPlaceHolder1_btnPurchasepricewiseStock" class="btn_reportitems">
+                                            </td>
+                                        </tr>
+                                            <tr>
+                                            <td>
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                
+</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$hfValue" id="ContentPlaceHolder1_hfValue">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td id="ContentPlaceHolder1_Comtentplacefolder" valign="top" class="style6">
+                    <div style="margin: 0 auto; height: auto; overflow: auto; padding-left: 0px;">
+                        
+
+   <table width="100%">
+       <tbody><tr>
+            <td class="sub-head" colspan="7"><h2>Daily Medicine Purchase Report</h2>
+            </td>
+       </tr>     
+       <tr>
+       <td colspan="7">
+        <fieldset>
+       <table>
+       <tbody><tr>
+       
+            <td width="30px"></td>
+            <td>
+                <span id="ContentPlaceHolder1_ContentPlaceHolder1_Label1">Hospital</span>
+                <span id="ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2" style="display:none;"></span>
+            </td>
+            <td>
+                <select name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlBranch" id="ContentPlaceHolder1_ContentPlaceHolder1_ddlBranch" disabled="disabled" class="aspNetDisabled" style="width:120px;">
+	<option value="0">--Select--</option>
+	<option selected="selected" value="1">SPARSH CRITICAL CARE HOSPITAL</option>
+
+</select>
+            </td>
+            <td>
+                <span id="ContentPlaceHolder1_ContentPlaceHolder1_Label2">Date</span>
+                <span id="ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1" style="display:none;"></span>
+            </td>
+            <td>
+                <input name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtFromDate" type="text" value="06-Jan-2020" id="ContentPlaceHolder1_ContentPlaceHolder1_txtFromDate" style="width:120px;">
+                
+                
+            </td>
+            <td align="left" width="250">
+  
+             <input type="submit" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnShow" value="Show" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnShow&quot;, &quot;&quot;, true, &quot;show&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_ContentPlaceHolder1_btnShow" class="btn_red">
+         
+             
+          </td>
+          <td width="150"></td>
+          </tr></tbody></table>
+          </fieldset>   
+          </td>   
+        </tr>
+    </tbody></table>
+        <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$hfLogID" id="ContentPlaceHolder1_ContentPlaceHolder1_hfLogID" value="13394">
+     <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$hfUserCode" id="ContentPlaceHolder1_ContentPlaceHolder1_hfUserCode" value="174">
+     <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$hfBranchId" id="ContentPlaceHolder1_ContentPlaceHolder1_hfBranchId" value="1">         
+<div id="ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1" style="display:none;">
+
+</div>
+
+                    </div>
+                </td>
+
+            </tr>
+        </tbody></table>
+    </div>
+   
+
+            <div id="ModalPopupExtender2_backgroundElement" class="modalBackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></div>
+            <div id="footer" style="margin-top: 20px;">
+                <div class="fdata">
+                    <table align="center" width="100%" cellpadding="5">
+                        <tbody><tr>
+                            <td style="width: 33%" align="left">
+                                <div class="animated zoomIn">
+                                    <p>
+                                        Version - 1.9.7</p>
+                                </div>
+                            </td>
+                            <td style="width: 33%" align="center">
+                                <table>
+                                    <tbody><tr>
+                                        <td>
+                                            <input type="submit" name="ctl00$ctl00$btnDepartment" value="Departments" id="btnDepartment" class="dept">
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                            <td style="width: 33%" align="right">
+                                <div class="animated zoomIn">
+                                    <p>
+                                        Copy Right© 2018 All Rights Reserved. Powered by <a style="margin-left: 4px" href="https://www.writerinformation.com" target="_blank">
+                                            <span id="Label2" style="color:#00CCFF;">  Writer Information.</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1"));
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2"), document.getElementById("ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2 = document.all ? document.all["ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2"] : document.getElementById("ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2");
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2.controltovalidate = "ContentPlaceHolder1_ContentPlaceHolder1_ddlBranch";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2.errormessage = "Please Select Branch";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2.display = "None";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2.validationGroup = "show";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2.initialvalue = "0";
+var ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1");
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_ContentPlaceHolder1_txtFromDate";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Please Enter Date";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1.display = "None";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1.validationGroup = "show";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+var ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1 = document.all ? document.all["ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1"] : document.getElementById("ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1");
+ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1.showmessagebox = "True";
+ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1.showsummary = "False";
+ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1.validationGroup = "show";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('ContentPlaceHolder1_ContentPlaceHolder1_ValidationSummary1');
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modelpopupbg","CancelControlID":"imgCloseLogin","PopupControlID":"pnldepartmentnavigation","dynamicServicePath":"/MedismartReports/Rpt_DailyMedicinePurchaseReport.aspx","id":"mpdepnav"}, null, null, $get("hdndepnav"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modelpopupbg","CancelControlID":"closeimg","PopupControlID":"pnlLogin","dynamicServicePath":"/MedismartReports/Rpt_DailyMedicinePurchaseReport.aspx","id":"mpeLogin"}, null, null, $get("Hidden1"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modelpopupbg","CancelControlID":"Login_imgCloseLogin","PopupControlID":"Login_pnlLogin","dynamicServicePath":"/MedismartReports/Rpt_DailyMedicinePurchaseReport.aspx","id":"Login_mpeLogin"}, null, null, $get("btnDepartment"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":false,"interval":1200000,"uniqueID":"ctl00$ctl00$AdminAlert$Timer1"}, null, null, $get("AdminAlert_Timer1"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modelpopupbg","CancelControlID":"AdminAlert_imgCloseLogin","PopupControlID":"AdminAlert_pnlLogin","dynamicServicePath":"/MedismartReports/Rpt_DailyMedicinePurchaseReport.aspx","id":"AdminAlert_mpeAdminAlerts"}, null, null, $get("AdminAlert_HiddenField1"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":false,"interval":120000,"uniqueID":"ctl00$ctl00$Timer1"}, null, null, $get("Timer1"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CollapsiblePanelBehavior, {"ClientStateFieldID":"cpe_ClientState","CollapseControlID":"pnlChat","Collapsed":true,"CollapsedSize":1,"CollapsedText":"Show Details (...)","ExpandControlID":"pnlChat","ExpandedText":"Hide Details (...)","ImageControlID":"Image1","TextLabelID":"textLabel","id":"cpe"}, null, null, $get("collab"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":false,"interval":150000,"uniqueID":"ctl00$ctl00$AdminTimer"}, null, null, $get("AdminTimer"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"lblClose","PopupControlID":"pnlAdmin","dynamicServicePath":"/MedismartReports/Rpt_DailyMedicinePurchaseReport.aspx","id":"ModalPopupExtender1"}, null, null, $get("lblAdmin"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"imgClose","PopupControlID":"PnlPurreturn","dynamicServicePath":"/MedismartReports/Rpt_DailyMedicinePurchaseReport.aspx","id":"ModalPopupExtender2"}, null, null, $get("PURPAy"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"TextBoxWatermarkExtender2_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Search By Bill No.","id":"TextBoxWatermarkExtender2"}, null, null, $get("txtSearchbillno"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"format":"dd-MMM-yyyy","id":"CalendarExtender1"}, null, null, $get("txtSearchbillDate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"TextBoxWatermarkExtender1_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Search By Bill Date","id":"TextBoxWatermarkExtender1"}, null, null, $get("txtSearchbillDate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"TextBoxWatermarkExtender3_ClientState","WatermarkCssClass":"watermark","WatermarkText":"Search By Supplier Name","id":"TextBoxWatermarkExtender3"}, null, null, $get("txtSearchSuppname"));
+});
+
+document.getElementById('ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator2'));
+}
+
+document.getElementById('ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_ContentPlaceHolder1_RequiredFieldValidator1'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"format":"dd-MMM-yyyy","id":"ContentPlaceHolder1_ContentPlaceHolder1_CalendarExtender1"}, null, null, $get("ContentPlaceHolder1_ContentPlaceHolder1_txtFromDate"));
+});
+//]]>
+</script>
+<div id="mpdepnav_backgroundElement" class="modelpopupbg" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="mpeLogin_backgroundElement" class="modelpopupbg" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="Login_mpeLogin_backgroundElement" class="modelpopupbg" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></form>
+
+
+</body></html>

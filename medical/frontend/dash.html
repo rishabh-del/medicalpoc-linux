@@ -1,0 +1,349 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1">
+    <title>
+        Blockchain
+    </title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <!--menu-->
+    <link href="../admin_css/menu.css" rel="stylesheet" type="text/css">
+    <link href="../admin_css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/footerstyle.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/sweetalert.min.js"></script>
+    <link href="../css/sweetalert.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.main_menu ul li').hover(
+                function () {
+                    $('.sub_items', this).stop(true, false).slideDown();
+                }, function () {
+                    $('.sub_items', this).stop(true, false).slideUp();
+                });
+        });
+        function noBack() {
+            window.history.forward()
+        }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function (evt) { if (evt.persisted) noBack(); }
+        window.onunload = function () { void (0); }
+    </script>
+
+
+
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+        }
+
+        #wrapper {
+            max-height: 100%;
+            height: auto !important;
+            width: 100%;
+            /* margin: 0 auto 50px auto; */
+            position: relative;
+        }
+
+        .btn_reportitems {
+            margin: 0px;
+            padding-left: 20px;
+            width: 100%;
+            text-align: left;
+            text-decoration: none;
+            cursor: pointer;
+            color: #FFF;
+            height: 65px;
+            font-weight: normal;
+            border: none;
+            background: #4794cc;
+            border-bottom: solid 1px #FFF;
+            transition: all 0.5s ease;
+        }
+
+        input:hover {
+            background-color: grey;
+        }
+    </style>
+    <link
+        href="/WebResource.axd?d=OKaXe4XzuJA99-x6I5Dbe05RZEEif1uNYY13sMpwxBEnQ6zy09pE73yAo1v7b2urNNsaeu17IC7J7mhUb8mSLqABpgd4cJr34XINMrgSoXML6p0YOcCwcOBBCeoWJrT675OwF071jje-f9ZSFBI37W7Ouv41&amp;t=636717447600000000"
+        type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div id="wrapper">
+            <div id="main-div">
+                <div id="header">
+                    <div class="logo">
+                        <img src="../frontend/assets/images/logo.png" style="height: 120px;"></div>
+
+                    <div class="header-left">
+                        <div class="top-nav top-nav1">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div style="display:none;">
+                    <div class="menu">
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="ipd-nav" style="margin-bottom: 10px;">
+                <span id="Timer1" style="visibility:hidden;display:none;"></span>
+                <input type="hidden" name="ctl00$ctl00$cpe_ClientState" id="cpe_ClientState" value="true">
+                <div class="chatpopup" style="display: none;">
+                    <div id="adt">
+
+                        <div id="pnlChat" class="modalHandle">
+
+
+                        </div>
+                        <div class="clr">
+                        </div>
+                        <div>
+                            <div id="collab" style="height: 1px; overflow: hidden; display: none;">
+                                <div id="" style="height: auto; overflow-x: hidden;">
+
+                                    <div class="message">
+                                        <div id="UpdatePanel9">
+
+                                            <textarea name="ctl00$ctl00$txtMessage" rows="2" cols="20" id="txtMessage"
+                                                style="height:50px;width:250px;"></textarea>
+                                            <input type="submit" name="ctl00$ctl00$btnSendMessage" value="Send"
+                                                id="btnSendMessage" class="chatbtn">
+                                            <input type="submit" name="ctl00$ctl00$btnCloseMessage" value="Clear"
+                                                id="btnCloseMessage" class="chatbtn">
+
+                                        </div>
+                                    </div>
+                                    <div style="display: block; min-height: 200px !important;">
+
+                                        <div id="UpdatePanel2">
+
+                                            <div id="iframe">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="wrapper">
+                    &nbsp;
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td valign="top" style="width: 20% !important;">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+
+                                            <tr>
+                                                <td>
+                                                    <div id="ContentPlaceHolder1_PnlPharmacy"
+                                                        style="height:480px;width:250px;overflow:auto;">
+
+                                                        <table width="100%" style="background: #efefef;" cellpadding="0"
+                                                            cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="submit" name="Patient_Profile"
+                                                                            value="Patient’s Profile"
+                                                                            id="Patient_Profile"
+                                                                            class="btn_reportitems">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="submit" name="OPD_prescriptions"
+                                                                            value="OPD prescriptions"
+                                                                            id="OPD_prescriptions"
+                                                                            class="btn_reportitems">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="submit" name="OPD_Billing_Details"
+                                                                            value="OPD Billing Details"
+                                                                            id="OPD_Billing_Details"
+                                                                            class="btn_reportitems">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="submit" name="Admission_Details"
+                                                                            value="Admission Details"
+                                                                            id="Admission_Details"
+                                                                            class="btn_reportitems">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="submit"
+                                                                            name="Inpatient_Billing_Details"
+                                                                            value="Inpatient Billing Details"
+                                                                            id="Inpatient_Billing_Details"
+                                                                            class="btn_reportitems">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="submit" name="Pathology_Reports"
+                                                                            value="Pathology Reports"
+                                                                            id="Pathology_Reports"
+                                                                            class="btn_reportitems">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input type="submit" name="Radiology_Reports"
+                                                                            value="Radiology Reports"
+                                                                            id="Radiology_Reports"
+                                                                            class="btn_reportitems">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$hfValue"
+                                                        id="ContentPlaceHolder1_hfValue">
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td id="ContentPlaceHolder1_Comtentplacefolder" valign="top" class="style6">
+                                    <div style="margin: 0 auto; height: auto; overflow: auto; padding-left: 0px;">
+
+
+                                        <table width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="sub-head" colspan="7">
+                                                        <h2>Patient Report</h2>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="7">
+                                                        <fieldset>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+
+                                                                        <td width="30px"></td>
+
+                                                                        <td>
+                                                                            <span>Date</span>
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="text" placeholder="Enter Patient ID" id="patientKey" ng-model="patient.date" name="patientKey"
+                                                                            style="width: 140px;">
+
+
+                                                                        </td>
+                                                                        <td align="left" width="250">
+
+                                                                            <input type="submit" name="dateSubmit"
+                                                                                value="Show" id="dateSubmit"
+                                                                                class="btn_red">
+
+
+                                                                        </td>
+                                                                        <td width="150"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </fieldset>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div id="ModalPopupExtender2_backgroundElement" class="modalBackground"
+                    style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div>
+            </div>
+            <div id="footer" style="margin-top: 20px;">
+                <div class="fdata">
+                    <table align="center" width="100%" cellpadding="5">
+                        <tbody>
+                            <tr>
+                                <td style="width: 33%" align="left">
+                                    <div class="animated zoomIn">
+                                        <p>
+                                            Version - 1.9.7</p>
+                                    </div>
+                                </td>
+                                <td style="width: 33%" align="center">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="submit" name="ctl00$ctl00$btnDepartment"
+                                                        value="Departments" id="btnDepartment" class="dept">
+                                                </td>
+                                                <td>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style="width: 33%" align="right">
+                                    <div class="animated zoomIn">
+                                        <p>
+                                            Copy Right© 2018 All Rights Reserved. Powered by <a style="margin-left: 4px"
+                                                href="https://www.writerinformation.com" target="_blank">
+                                                <span id="Label2" style="color:#00CCFF;"> Writer Information.</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

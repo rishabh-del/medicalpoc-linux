@@ -1,0 +1,386 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1">
+  <title>
+    Blockchain
+  </title>
+
+
+  <style type="text/css">
+    .style1 {
+      width: 100%;
+    }
+
+    .wrapper {
+      max-height: 100%;
+      height: auto !important;
+      width: 100%;
+      /* margin: 0 auto 50px auto; */
+      position: relative;
+    }
+
+    .plugs1 :hover {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+      opacity: 0.75;
+    }
+
+    .plugs2 :hover {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+      opacity: 0.75;
+    }
+
+    .plugs3 :hover {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+      opacity: 0.75;
+    }
+
+    .plugs4 :hover {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+      opacity: 0.75;
+    }
+
+    .plugs5 :hover {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+      opacity: 0.75;
+    }
+
+    .plugs6 :hover {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+      opacity: 0.75;
+    }
+
+    .plugs7 :hover {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+      opacity: 0.75;
+    }
+
+
+    .plugs1 {
+      position: fixed;
+      left: 5%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+    }
+
+    .plugs2 {
+      position: fixed;
+      left: 25%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+
+    }
+
+    .plugs3 {
+      position: fixed;
+      left: 50%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+
+    }
+
+    .plugs4 {
+      position: fixed;
+      left: 75%;
+      top: 10%;
+      width: 12%;
+      height: 25%;
+
+    }
+
+    .plugs5 {
+      position: fixed;
+      left: 5%;
+      top: 60%;
+      width: 12%;
+      height: 25%;
+
+    }
+
+    .plugs6 {
+      position: fixed;
+      left: 25%;
+      top: 60%;
+      width: 12%;
+      height: 25%;
+
+    }
+
+    .plugs7 {
+      position: fixed;
+      left: 50%;
+      top: 60%;
+      width: 12%;
+      height: 25%;
+
+    }
+
+    .plugs {
+      background: rgba(255, 255, 255, 0.28);
+      overflow: hidden;
+      transform: rotate(0deg);
+      position: fixed;
+      top: 15%;
+      border-radius: 5px;
+      width: 95%;
+      height: 65%;
+      margin: auto;
+      clear: both;
+      display: table;
+      content: "";
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      transition: all 0.5s;
+    }
+
+    .btn_reportitems {
+      margin: 0px;
+      padding-left: 20px;
+      width: 100%;
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+      color: #FFF;
+      height: 65px;
+      font-weight: normal;
+      border: none;
+      background: #4794cc;
+      border-bottom: solid 1px #FFF;
+      transition: all 0.5s ease;
+    }
+
+    .radiobtn {
+      padding-left: 20px;
+    }
+
+    #data_content {
+      padding-left: 5px;
+    }
+  </style>
+
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+  <div>
+    <div class="wrapper">
+      <div id="main-div">
+        <div id="headers" class="plugs">
+       <a href="" name="Patient_Profile" ng-model="patient.Patient_Profile"
+              id="Patient_Profile" ><img class="plugs1" src="../assets/images/sadfasdf.png"
+              alt="Person" ng-click="downloadCurrentFile('OPD Patient Profile')"></a>
+         
+
+              <a href="" name="OPD_prescriptions" ng-model="patient.OPD_prescriptions"
+              id="OPD_prescriptions" >  <img class="plugs2" src="../assets/images/output-onlinepngtools (7).png" alt="Person" ng-click="downloadCurrentFile('ClinicalEncounterNotes')"></a>
+              <a href="" name="OPD_Billing_Details" ng-model="patient.OPD_Billing_Details"
+              id="OPD_Billing_Details" >   <img class="plugs3" src="../assets/images/output-onlinepngtools (1).png" alt="Person" ng-click="downloadCurrentFile('OPDReceipt')"></a>
+              <a href="" name="Admission_Details" ng-model="patient.Admission_Details"
+              id="Admission_Details" >   <img class="plugs4" src="../assets/images/output-onlinepngtools (2) (1).png" alt="Person" ng-click="downloadCurrentFile('IPD Summary Bill')"></a>
+              <a href="" name="Inpatient_Billing_Details" ng-model="patient.Inpatient_Billing_Details"
+              id="Inpatient_Billing_Details" >   <img class="plugs5" src="../assets/images/output-onlinepngtools (4).png" alt="Person" ng-click="downloadCurrentFile('IPD Detailed Bill')"></a>
+              <a href="" name="Pathology_Reports" ng-model="patient.Pathology_Reports"
+              id="Pathology_Reports" >  <img class="plugs6" src="../assets/images/output-onlinepngtools (6) (1).png" alt="Person" ng-click="downloadCurrentFile('Pathology Report')"></a>
+              <a href="" name="Radiology_Reports" ng-model="patient.Radiology_Reports"
+              id="Radiology_Reports" >  <img class="plugs7" src="../assets/images/output-onlinepngtools.png" alt="Person" ng-click="downloadCurrentFile('Xray Impression')"></a>
+
+        </div>
+        <!-- <div id="content" class="ipd-nav" style="position: fixed; height: 75%;
+      top: 100px;">
+        <div class="wrapper">
+          <h2>Patient Report</h2>
+          <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td valign="top" style="width: 20% !important;">
+                  <table cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div id="ContentPlaceHolder1_PnlPharmacy" style="height:480px;width:250px;overflow:auto;">
+                            <table width="100%" style="background: #efefef;" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <button type="submit" name="Patient_Profile" ng-model="patient.Patient_Profile"
+                                      id="Patient_Profile" class="btn_reportitems"
+                                      ng-click="downloadCurrentFile('OPD Patient Profile')">Patient’s Profile</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="submit" name="OPD_prescriptions" ng-model="patient.OPD_prescriptions"
+                                      id="OPD_prescriptions" class="btn_reportitems"
+                                      ng-click="downloadCurrentFile('ClinicalEncounterNotes')">OPD
+                                      Prescriptions</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="submit" name="OPD_Billing_Details"
+                                      ng-model="patient.OPD_Billing_Details" id="OPD_Billing_Details"
+                                      class="btn_reportitems" ng-click="downloadCurrentFile('OPDReceipt')">OPD Billing
+                                      Details</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="submit" name="Admission_Details" ng-model="patient.Admission_Details"
+                                      id="Admission_Details" class="btn_reportitems"
+                                      ng-click="downloadCurrentFile('IPD Summary Bill')">Admission Details</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="submit" name="Inpatient_Billing_Details"
+                                      ng-model="patient.Inpatient_Billing_Details" id="Inpatient_Billing_Details"
+                                      class="btn_reportitems"
+                                      ng-click="downloadCurrentFile('IPD Detailed Bill')">Inpatient Billing
+                                      Details</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="submit" name="Pathology_Reports" ng-model="patient.Pathology_Reports"
+                                      id="Pathology_Reports" class="btn_reportitems"
+                                      ng-click="downloadCurrentFile('Pathology Report')">Pathology Reports</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="submit" name="Radiology_Reports" ng-model="patient.Radiology_Reports"
+                                      id="Radiology_Reports" class="btn_reportitems"
+                                      ng-click="downloadCurrentFile('Xray Impression')">Radiology Reports</button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$hfValue"
+                            id="ContentPlaceHolder1_hfValue">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td id="data_content" valign="top" class="style6">
+                  <div style="margin: 0 auto; height: auto; overflow: auto; padding-left: 0px;">
+                    <table width="100%">
+                      <tbody>
+                        <tr>
+                          <td class="sub-head" colspan="7">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="7">
+                            <fieldset class="fieldset">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <form>
+                                      <td class="radiobtn">
+                                        <input type="radio" name="time" value="">Date
+                                      </td>
+                                      <td class="radiobtn">
+                                        <input type="text" placeholder="MM/DD/YYYY" id="patientDate"
+                                          ng-model="patient.date" name="patientKey" style="width: 160px;"
+                                          onfocus="(this.type='date')" onblur="(this.type='text')" />
+                                      </td>
+                                      <td class="radiobtn">
+                                        <input type="radio" name="time" value="monthly" checked> Monthly
+
+                                      </td>
+
+                                      <td class="radiobtn">
+
+                                        <input type="radio" name="time" value="quaterly"> Quaterly
+
+                                      </td>
+                                      <td class="radiobtn">
+
+                                        <input type="radio" name="time" value="yearly"> Yearly
+
+                                      </td>
+                                      <td align="left" width="250" class="radiobtn">
+
+                                        <input type="submit" name="dateSubmit" value="Filter" id="dateSubmit"
+                                          class="btn_red">
+
+
+                                      </td>
+                                    </form>
+                                    <td width="150"></td>
+
+                                  </tr>
+                                  <div id="myModal" class="modal">
+
+                                    <div class="modal-content">
+                                      <span class="close">&times;</span>
+                                      <p>Some text in the Modal..</p>
+                                    </div>
+
+                                  </div>
+                                </tbody>
+                              </table>
+                            </fieldset>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                  </div>
+                  <iframe class="frameevent" id="frameevent" width='100%' height='100%' src=""></iframe>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div> -->
+
+      </div>
+    </div>
+</body>
+
+</html>

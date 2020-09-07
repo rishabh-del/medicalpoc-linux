@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box
+  }
+</style>
+
+<body>
+    <h1>Add Organization Requests</h1>
+    <hr>
+  <form style="border:1px solid #ccc; width: 550px; margin-left: auto; margin-right: auto;" ng-repeat="y in orgDetail">
+    <div class="container">
+     
+
+      <label for="orgName"><b>Organization Name</b></label> :  
+   {{y.orgName}}
+  </br>
+      <label for="chaincodeVersion"><b>Chaincode Version</b></label> :  
+      {{y.chaincodeVersion}}
+    </br>
+      <label for="port1"><b>Port 1</b></label> :  
+      {{y.port1}}
+    </br>
+      <label for="port2"><b>Port 2</b></label> :  
+      {{y.port2}}
+    </br>
+      <label for="port3"><b>Port 3</b></label> :  
+      {{y.port3}}
+    </br>
+      <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+
+      <div class="clearfix">
+        <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+        <button type="submit" class="signupbtn" ng-click="addOrg(y)">Add Organization</button>
+      </div>
+    </div>
+  </form>
+
+</body>
+
+</html>

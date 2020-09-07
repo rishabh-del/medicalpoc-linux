@@ -1,0 +1,107 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1">
+  <title>
+    Blockchain
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+  <br>
+
+  <div id="Landing" class="tabcontent">
+
+
+    <a href="" ng-click="profile(patientData)"> <img src="assets/images/pngfuel.png" id="profileId" width="3%"
+        height="5%" alt="Patient"></a>
+
+
+    <span class="span"><img class="gurunanaklogo" src="../assets/images/gurunanaklogo.jpg">Guru Nanak Hospital &
+      Research
+      Centre </span>
+
+    <div class="card" id="myDIV">
+
+      <h1>&nbsp;{{patientData.name}}</h1>
+      <p class="title">Patient ID : {{patientData.userId}}</p>
+      <p class="title">Email ID : {{patientData.emailID}}</p>
+      <p><button>Contact : {{patientData.mobile}}</button></p>
+    </div>
+    <!-- <div class="tab topnav" id="tabular" style="position: fixed; z-index: 1; width: 97%;">
+      <button class="tablinks" ng-click="openPage('landing')">Patient Info</button>
+      <button class="tablinks" ng-click="openPage('reimburse')">Reimbursement Request</button>
+
+      <div class="search-container">
+        <form style="display: inline-flex;">
+          <input type="text" placeholder="jgf" ng-model="searchText" name="search">&nbsp;&nbsp;&nbsp;
+          <button type="submit"><i class="fa fa-search"></i></button>&nbsp;&nbsp;&nbsp;
+        </form>
+      </div>
+    </div> -->
+    <div class="wrapper">
+      <div id="main-div" class="w3-container">
+        <div id="headers" class="plugs">
+
+          <a href="" name="Patient_Profile" ng-model="patient.Patient_Profile" id="Patient_Profile"
+            ng-click="downloadCurrentFile('OPD Patient Profile')">
+            <img class="plugs1Image" src="../assets/images/patientprofile.PNG" alt="Person">
+          </a>
+          <a href="" name="OPD_prescriptions" ng-model="patient.OPD_prescriptions" id="OPD_prescriptions"
+            ng-click="downloadCurrentFile('ClinicalEncounterNotes')">
+            <img class="plugs2Image" src="../assets/images/opdpresc.PNG" alt="Person">
+          </a>
+          <a href="" name="OPD_Billing_Details" ng-model="patient.OPD_Billing_Details" id="OPD_Billing_Details"
+            ng-click="downloadCurrentFile('OPDReceipt')">
+            <img class="plugs3Image" src="../assets/images/opdbilld.PNG" alt="Person">
+          </a>
+          <a href="" name="Admission_Details" ng-model="patient.Admission_Details" id="Admission_Details"
+            ng-click="downloadCurrentFile('IPD Summary Bill')">
+            <img class="plugs4Image" src="../assets/images/admindetails.PNG" alt="Person">
+          </a>
+          <a href="" name="Inpatient_Billing_Details" ng-model="patient.Inpatient_Billing_Details"
+            ng-click="downloadCurrentFile('IPD Detailed Bill')" id="Inpatient_Billing_Details">
+            <img class="plugs5Image" src="../assets/images/ipdetails.PNG" alt="Person">
+          </a>
+          <a href="" name="Pathology_Reports" ng-model="patient.Pathology_Reports" id="Pathology_Reports"
+            ng-click="downloadCurrentFile('Pathology Report')">
+            <img class="plugs6Image" src="../assets/images/pathology.PNG" alt="Person">
+          </a>
+          <a href="" name="Radiology_Reports" ng-model="patient.Radiology_Reports" id="Radiology_Reports"
+            ng-click="downloadCurrentFile('Xray Impression')">
+            <img class="plugs8Image" src="../assets/images/xraynew.PNG" alt="Person">
+          </a>
+
+        </div>
+        <iframe id="frameevent" ng-show="iframe == true" width='100%' height='70vh' src=""></iframe>
+        <!-- <div class="tableContainer"> -->
+        <div id="customers" style="
+        /* width: 128vh; */
+        position: fixed;
+        left: 50vh;
+        top: 18vh;
+        color: black;">
+          <table ng-if="iframe == false" class="tableevent w3-table-all w3-card-4">
+
+            <tr class="tablecontent">
+              <th>File Name</th>
+              <th>Date</th>
+              <th>Download File</th>
+            </tr>
+            <tr ng-repeat="body in src | reverse">
+              <th>{{body.fileName}}</th>
+              <th>{{body.date}}</th>
+              <th><a href=""><img src="../assets/images/download.png" alt="Person"
+                    ng-click="getPdf(body.fileName, body.data)" width="fit-content" height="5%"></img></a></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

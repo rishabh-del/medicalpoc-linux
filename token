@@ -1,0 +1,62 @@
+9wfNJx2jCAHE6tF6iYVu token
+
+
+qirzGdHmSUyykeryZYz- shristi token
+
+mghRCA2n8UdcmNJ mongo
+
+FRIENDLY NAME
+BlockChain
+ top: 40%; left: 50%
+SID
+SK90fd289a7dc38bb969a2b72460b77a6f
+
+KEY TYPE
+Standard
+
+SECRET
+xqBTtq5GJfv4wsNBzMCFaFxZPAkbR2YK
+Kl1QZBwUjW6L5NKfiUv7bj0KFF0RGlYm
+mongodb+srv://medicalBlock:medPass@cluster0-qq1fv.mongodb.net/test
+
+  authy.register_user(data.emailID, data.mobile,'+91', force=true, function (err, res) {
+      console.log(res, data.emailID, '+91' + data.mobile);
+      console.log(err);
+     // data.authyId = res.user.id;
+   });
+
+steps to add org 
+
+1. generateCerts
+2. generateChannelArtifacts
+3. Fetch the config for the channel
+4. Modify the configuration to append the new org
+5. Compute a config update
+6. Set the peerOrg admin of an org and signing the config update
+7. peer channel update
+8. start org3 services (docker containers)
+9. Fetch channel config block from orderer
+10.Join channel all the peers individually
+11.Install new chaincode version on all the orgs
+12.Upgrade chaincode
+docker exec -e CORE_PEER_LOCALMSPID=org4MSP -e CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp cli peer chaincode upgrade -o orderer.example.com:7050 -C mychannel -n medical -l node -v 2.0 -c '{"Args":[]}' -P 'AND('\''Org1MSP.member'\'','\''Org2MSP.member'\'')' --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org4.example.com:11051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/ca.crt
+
+
+http://192.168.128.1/
+
+Patient Id , Doctor Id, Date, file name, file type, download button, patient name,
+mobile, email, 
+
+ <tr ng-repeat="body in src">
+            <th>{{body.fileName}}</th>
+            <th>{{body.date}}</th>
+            <th>{{body.doctorId}}</th>
+            <th></th>
+
+          </tr>
+
+
+
+          Imp peerOrganizations
+          1. Add Pharma
+          
