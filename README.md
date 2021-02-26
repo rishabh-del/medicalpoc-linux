@@ -3,7 +3,7 @@
  
 
 Health Care Blockchain
-05.12.2019
+
 ─
 Rishabh Pandey
 
